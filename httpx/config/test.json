@@ -1,0 +1,10 @@
+{
+  "scenarios": {
+    "scenario1": {
+      "executor": "shared-iterations",
+      "iterations": 1,
+      "vus": 1,
+      "exec": "scenario1"
+    }
+  }
+}
