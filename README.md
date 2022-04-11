@@ -1,8 +1,16 @@
 # k6-templates
  
-This repo contains various opinionated starter templates for k6 projects. Common across all templates is the use of folders and multiple JavaScript files to encourage code organization.
+This repo contains various opinionated starter templates for k6 projects.
 
-The `vanilla` template uses built-in k6 APIs and therefore requires no external dependencies. The remaining templates offer alternatives to built-in APIs that add functionality as described below.
+Common across all templates is the use of folders and multiple JavaScript files to encourage code organization:
+
+- `common`: A suitable location for storing re-usable functions
+- `config`: Contains a JSON file that is used to populate the [options](https://k6.io/docs/using-k6/options/) object at runtime (allowing the separation of test config from code)
+- `scripts`: A folder for storing code that performs actual automation
+
+
+## [Vanilla](vanilla/README.md)
+This template uses built-in k6 APIs and therefore requires no external dependencies. Use this template if you prefer to use the built-in APIs over those provided by the other templates.
 
 ## [Httpx](httpx/README.md)
 
