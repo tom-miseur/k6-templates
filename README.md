@@ -1,6 +1,6 @@
 # k6-templates
  
-This repo contains various opinionated starter templates for k6 projects.
+This repo contains various opinionated starter templates for [k6](https://k6.io/) projects.
 
 Common across all templates is the use of folders and multiple JavaScript files to encourage code organization:
 
