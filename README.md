@@ -23,4 +23,4 @@ The template also includes an example re-usable function for performing response
 
 ## [k6chaijs](k6chaijs/README.md)
 
-This template uses the [ChaiJS](https://www.chaijs.com/) library to perform assertions instead of using the built-in [group](https://k6.io/docs/javascript-api/k6/group-name-fn/) and [check](https://k6.io/docs/javascript-api/k6/check-val-sets-tags/) functions.
+This template uses the [ChaiJS](https://www.chaijs.com/) library through [k6chaijs](https://k6.io/docs/javascript-api/jslib/k6chaijs/) to perform assertions instead of using the built-in [group](https://k6.io/docs/javascript-api/k6/group-name-fn/) and [check](https://k6.io/docs/javascript-api/k6/check-val-sets-tags/) functions.
