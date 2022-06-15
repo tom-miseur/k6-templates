@@ -6,7 +6,8 @@ Common across all templates is the use of folders and multiple JavaScript files 
 
 - `common`: A suitable location for storing re-usable functions
 - `config`: Contains a JSON file that is used to populate the [options](https://k6.io/docs/using-k6/options/) object at runtime (allowing the separation of test config from code)
-- `scripts`: A folder for storing code that performs actual automation
+- `scenarios`: A folder for storing scripts representing end-to-end scenarios
+- `scripts`: A folder for storing code that performs the actual automation
 
 
 ## [Vanilla](vanilla/README.md)

@@ -8,13 +8,17 @@ An example of such a function can be found in `utils.js`, namely `randomIntBetwe
 
 ### config
 
-It is often useful to separate test configuration from  JavaScript code, particularly when the code is being kept under source control.
+It is often useful to separate test configuration from JavaScript code, particularly when the code is being kept under source control.
 
 The contents of `test.json` will be merged with `options` set directly in the entry-point script (`main.js`). One of the more useful properties to store in this JSON file are [Scenario](https://k6.io/docs/using-k6/scenarios/) definitions.
 
-The current `test.json` contains a single scenario that will run the exported function in `scripts/script1.js` as determined by the scenario's `exec` property that expects the name of an exported function to execute.
+The current `test.json` contains a single scenario that will run the exported function in `scenarios/scenario1.js` as determined by the scenario's `exec` property that expects the name of an exported function to execute.
 
-Note that it is necessary to re-export the function in the entry-point script (`main.js`) in order to make it accessible.
+Note that it is necessary to re-export this function in the entry-point script (`main.js`) in order to make it accessible.
+
+### scenarios
+
+Scripts in the `scenarios` folder contain exported functions that can be used as entry-points for Scenarios (i.e. the `exec` property in `test.json`). These functions will in turn call exported functions provided by the `scripts` themselves. This layer of abstraction allows for some customization of what should be executed; perhaps there is a need to loop over a set of API functions - this might not be desirable to define in the scripts themselves. The order in which script functions are called can also be changed more easily if this code is separated out.
 
 ### scripts
 
