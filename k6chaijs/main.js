@@ -1,4 +1,4 @@
-export { script1 } from './scripts/script1.js';
+export { scenario1 } from './scenarios/scenario1.js';
 
 const PAUSE_MIN = __ENV.PAUSE_MIN || 1;
 const PAUSE_MAX = __ENV.PAUSE_MAX || 5;

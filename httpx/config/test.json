@@ -4,7 +4,7 @@
       "executor": "shared-iterations",
       "iterations": 1,
       "vus": 1,
-      "exec": "script1"
+      "exec": "scenario1"
     }
   }
 }

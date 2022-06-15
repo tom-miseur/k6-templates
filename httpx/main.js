@@ -1,6 +1,6 @@
 import { Httpx } from 'https://jslib.k6.io/httpx/0.0.3/index.js';
 
-export { script1 } from './scripts/script1.js';
+export { scenario1 } from './scenarios/scenario1.js';
 
 const BASE_URL = __ENV.BASE_URL || 'https://test-api.k6.io';
 const PAUSE_MIN = __ENV.PAUSE_MIN || 1;
