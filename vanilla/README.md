@@ -1,4 +1,4 @@
-The following folders and files are included in the starter template:
+The following folders and files are included in the starter templates:
 
 ### common
 
@@ -25,3 +25,7 @@ Scripts in the `scenarios` folder contain exported functions that can be used as
 The `scripts` folder can be used to store code that performs actual automation.
 
 In the example script `script1.js`, a GET request is made and a [check](https://k6.io/docs/using-k6/checks/) is used to validate the response status code. A subsequent `sleep` statement is then used to apply "think-time" based on a random value between the global `PAUSE_MIN` and `PAUSE_MAX` constants defined in the entry-point script `main.js`.
+
+### Examples
+
+The v2 branch of the [k6-example-woocommerce](https://github.com/grafana/k6-example-woocommerce/tree/v2) repository implements the `vanilla` template.
