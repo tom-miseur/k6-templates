@@ -1,7 +1,7 @@
 export { scenario1 } from './scenarios/scenario1.js';
 
-const PAUSE_MIN = __ENV.PAUSE_MIN || 1;
-const PAUSE_MAX = __ENV.PAUSE_MAX || 5;
+globalThis.PAUSE_MIN = __ENV.PAUSE_MIN || 1;
+globalThis.PAUSE_MAX = __ENV.PAUSE_MAX || 5;
 
 // load test config, used to populate exported options object:
 const testConfig = JSON.parse(open('./config/test.json'));

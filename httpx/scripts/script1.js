@@ -6,10 +6,11 @@ import { randomIntBetween } from 'https://jslib.k6.io/k6-utils/1.1.0/index.js';
 import { verifyResponse } from '../common/utils.js';
 
 export function script1() {
+  // example code - replace with yours!
+  
   console.log('Executing script1...');
 
-  // example code - replace with yours!
-  const res = session.get('/public/crocodiles/');
+  const res = globalThis.session.get('/public/crocodiles/');
 
   verifyResponse({
     response: res,
@@ -19,5 +20,5 @@ export function script1() {
     printOnError: true,
   });
 
-  sleep(randomIntBetween(PAUSE_MIN, PAUSE_MAX));
+  sleep(randomIntBetween(globalThis.PAUSE_MIN, globalThis.PAUSE_MAX));
 }
