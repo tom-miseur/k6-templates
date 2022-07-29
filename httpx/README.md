@@ -20,4 +20,4 @@ Note that it is necessary to re-export the function in the entry-point script (`
 
 The `scripts` folder can be used to store code that performs actual automation. In the case of Httpx, this involves using the global `session` object (declared in `main.js`) to perform HTTP requests and validating responses.
 
-In the example script `script1.js`, a GET request is made to the endpoint (note the exclusion of the absolute URL; only the path is needed) and the response is validated with `verifyResponse` from `utils.js`. A subsequent `sleep` statement can then be used to apply "think-time" based on a random value between the global `PAUSE_MIN` and `PAUSE_MAX` constants defined in the entry-point script `main.js`.
+In the example script `script1.js`, a GET request is made to the endpoint (note the exclusion of the absolute URL; only the path is needed) and the response is validated with `verifyResponse` from `utils.js`. A subsequent `sleep` statement can then be used to apply "think-time" based on a random value between the global `PAUSE_MIN` and `PAUSE_MAX` variables defined in the entry-point script `main.js`.
